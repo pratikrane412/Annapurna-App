@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Reciver.ReceiverHomeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_gradient">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_toStartOf="@id/logout"
+            android:text="Food Request"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/logout" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:onClick="logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_power_settings_new_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/foodreq"
+                />
+
+            <EditText
+                android:id="@+id/titileId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Im Hungry Now.Please Help Me"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_style"
+                android:hint="Im Hungry Now.Please Help Me"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/messageId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_style"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:hint="address"/>
+
+
+                <ImageView
+                    android:id="@+id/locationimg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="-45dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_location_red"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/alldeviceId"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="48dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:text="Request Food"/>
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requested foods.."
+                android:textColor="@color/blacks"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:stackFromEnd="true"
+                app:reverseLayout="true"
+                tools:listitem="@layout/raw_requeted_foods"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

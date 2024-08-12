@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titleNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Feedback"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileEt"
+        android:hint="ContactNo"
+        android:layout_below="@id/titleNameTv"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15sp"
+        android:maxLines="5" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:hint="enter feedback"
+        android:layout_below="@id/mobileEt"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15sp"
+        android:maxLines="5" />
+
+
+</RelativeLayout>

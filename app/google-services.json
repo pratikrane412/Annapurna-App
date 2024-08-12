@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "316811306052",
+    "firebase_url": "https://annapurna-a0754-default-rtdb.firebaseio.com",
+    "project_id": "annapurna-a0754",
+    "storage_bucket": "annapurna-a0754.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316811306052:android:f651e7ef06299f8a77c811",
+        "android_client_info": {
+          "package_name": "com.alok.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316811306052-dobbp3reqje9p0vnqja690gj7q53fldf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvsRZJcnpQbeiLQNwiqxCFtYUFYqqrraI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316811306052-dobbp3reqje9p0vnqja690gj7q53fldf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
